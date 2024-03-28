@@ -68,20 +68,63 @@
     <main>
         <div class="global-page-container">
             <div class="price-calculator">
-                <h1>Make an online quotation</h1>
-                <div class="filters">
+                <div class="filters ">
+
                     <div class="single-filter">
-                        <span>Quality</span>
-                        <input type="text" value="">
+                        <span class="filter-label">Quality</span>
+                        <input type="number" id="quality" value="10">
                     </div>
+                    <div class="single-filter">
+                        <span class="filter-label">Color</span>
+                        <div id="color" class="option-filter">
+                            <div id="white" class="color-option option-button">White</div>
+                            <div id="colored" class="color-option option-button selected">Colored</div>
+                        </div>
+                    </div>
+                    <div class="single-filter">
+                        <span class="filter-label">Quality of fabric</span>
+                        <div id="quality" class="option-filter">
+                            <div id="q150" class="quality-option option-button selected">Basic (150g/m2)</div>
+                            <div id="q190" class="quality-option option-button">High (190g /m2)</div>
+                        </div>
+                    </div>
+
+                    <div class="single-filter">
+                        <span class="filter-label">Style</span>
+                        <select id="style">
+                            <option value="printed">Printed</option>
+                            <option value="plain">Plain</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="results">
+                    <div class="product-picture">
+                        <div class="picture-area">
+                            <img id="photo-product" src="img/v-color-personalized.png" alt="short">
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <h2>Order details</h2>
+                        <p>Product: <span id="result-product">Basic t-shirt</span></p>
+                        <p>Style: <span id="result-style"></span></p>
+                        <p>Quality: <span id="result-quality"></span></p>
+                        <p>Color <span id="result-color"></span></p>
+                        <p>Quantity: <span id="result-quantity"></span></p>
+                        <p>Total: </p>
+
+                        <div id="price">INR<span id="total-price"></span></div>
+                        <div id="complete-order">Complete order</div>
+                    </div>
+
                 </div>
                
             </div>
 
         </div>
     </main>
-     
-   
+
+
     <!-- Footer -->
     <div class="footer">
         <div class="footer-container">
@@ -97,10 +140,8 @@
         </div>
         <span id="current_year"></span> &copy; All rights reserved
     </div>
-    
-
     <script src="index.js"></script>
-    <script src="loginform.js"></script>
+
 
 </body>
 

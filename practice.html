@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center; 
+        }
+        .global-page-container{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+        main .price-calculator .filters{
+            background-color: #EDEDED;
+            padding: 25px;
+            font-family: 'lato',sans-serif;
+            margin: auto;
+            width: 70%;
+           
+        }
+        .single-filter{
+            display: inline-block;
+            margin-left: 20px;
+            margin-bottom: 18px;
+           
+        }
+        .option-button{
+            background-color: #FFF;
+            padding: 10px 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .filter-label{
+            display: block;
+            margin-bottom: 7px;
+            font-size: 12px;
+        }
+        .selected{
+            background-color: #428CB3;
+            color: #FFF;
+        }
+        select{
+            height: 35px;
+            margin: 0;
+            padding-right: 18px;
+        
+        }
+        .single-filter input[type=number]{
+            max-width: 50px;
+
+
+        }
+
+    
+       
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="global-page-container">
+            <div class="price-calculator">
+                <div class="filters">
+                    <div class="single-filter">
+                        <span class="filter-label">Quality</span>
+                        <input type="number" id="quality" value="10">
+                    </div>
+                    <div class="single-filter">
+                        <span class="filter-label">Color</span>
+                        <div class="option-filter">
+                            <div class="color-option option-button">White</div>
+                            <div class="color-option option-button selected">colored</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="single-filter">
+                        <span class="filter-label">Quality of fabric</span>
+                        <div id="quality" class="option-filter">
+                            <div id="q150" class="quality-option option-button selected">Basic (150g/m2)</div>
+                            <div id="q190" class="quality-option option-button">High (190g /m2)</div>
+                        </div>
+                    </div>
+
+                    <div class="single-filter">
+                        <span class="filter-label">Style</span>
+                        <select>
+                            <option value="printed">Printed</option>
+                            <option value="plain">Plain</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+    
+</body>
+</html>

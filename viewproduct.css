@@ -262,12 +262,131 @@ body::-webkit-scrollbar{
     animation: rotating 0.7s linear infinite;  
 }
 
+/* main container */
 
+.global-page-container{
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    height: 100%;
+}
+main{
+    text-align: center;
+    padding-bottom: 35px;
+}
+main .price-calculator{
+    padding: 35px 0;
+}
+main .price-calculator h1{
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+main .price-calculator .filters{
+    background-color: #EDEDED;
+    padding: 25px;
+    text-align: left;
+    font-family: 'Lato',sans-serif;
+    width: 50%;
+    margin: auto;
 
+}
+main .price-calculator .filters .single-filter{
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 18px;
+}
+/* main .price-calculator .filters .single-filter .option-filter {
+    font-size: 0;
+} */
+main .price-calculator .filters .single-filter .option-filter .option-button{
+    padding: 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 35px;
+    background-color: #FFF;
+    margin: 0;
+}
+main .price-calculator .filters .single-filter .option-filter .selected {
+    background-color: #428CB3;
+    color: #FFF;
+  }
+  main .price-calculator .filters .single-filter input, main .price-calculator .filters .single-filter .option-button, main .price-calculator .filters .single-filter select {
+    height: 35px;
+    margin: 0;
+    font-size: 12px;
+  }
+  main .price-calculator .filters .single-filter input[type=number] {
+    max-width: 100px;
+  }
+  main .price-calculator .filters .single-filter select {
+    padding-right: 18px;
+  }
+  main .price-calculator .filters .single-filter .filter-label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .results{
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .results div{
+    margin-top: 15px;
+  }
+  .product-picture{
+    border: 1px solid #9B9B9B;
+    padding: 30px;
+    margin-left: 25px;
+    width: 250px;
+    height: 250px;
+  }
 
+  .picture-area img{
+    width: 250px;
+    height: 250px;
+  }
 
-
-
+  .product-description{
+    text-align: left;
+    padding-left: 25px;
+  }
+  .product-description h2{
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  .product-description p{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+  }
+  .product-description p span{
+    font-weight: normal;
+  }
+  #price{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #complete-order{
+    cursor: pointer;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    width: 260px;
+    background-color: #33DD3A;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  #complete-order:hover{
+    background-color: #2F9733;
+    transition: 0.5s;
+  }
 
 /* Media Query */
 @media screen and (max-width:700px)  {
@@ -305,5 +424,13 @@ body::-webkit-scrollbar{
     .refresh-loader svg{
         width: 25px;
     }
-   
+    /* .global-page-container{
+        width: fit-content;
+    } */
+    .results{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+/* media query */
+
