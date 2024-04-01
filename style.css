@@ -12,6 +12,13 @@ body{
 body::-webkit-scrollbar{
     width: 0;
 }
+.Offerbar{
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5vw;
+}
 .navbar{
     display:flex;
     justify-content: space-between;
@@ -102,15 +109,29 @@ body::-webkit-scrollbar{
     flex-basis: 20%;
 
 }
+.new-arrival-container img{
+    border-radius: 3%;
+}
+#overlay{
+    position: absolute;
+    border-radius: 2%;
+    z-index: 2;
+    opacity: 0.6;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    top: 0;
+}
 .new-arrival button{
     padding: 5% 10%;
     margin-top: 10px;
     color: #1D232C;
     position: absolute;
     top: 50%;
-    left: 18%;
+    left: 17%;
     border-radius: 10px;
     border: none;
+    z-index: 2;
 }
 .news{
     display: flex;
@@ -133,7 +154,6 @@ body::-webkit-scrollbar{
 }
 .footer{
     position: sticky;
-    width: 100%;
     margin-top: 20px;
     padding: 40px;
     background-color: #1D232C;
@@ -169,12 +189,44 @@ body::-webkit-scrollbar{
     justify-content: space-around;
 
 }
+
 .products-box{
-    text-align: center;
+    position: relative;
     flex-basis: 20%;
 }
 .products-box img{
     border-radius: 10px;
+    position: relative;
+}
+.sale-overlay{
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+    font-size: 2vw;
+    border-radius: 10%;
+}
+.products::-webkit-scrollbar{
+    appearance: none;
+}
+.like-button{
+    position: absolute;
+    width: 15%;
+    bottom: 20%;
+    left: 80%;
+}
+.products-box a button{
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    width: 50%;
+    height: 10%;
+    align-items: center;
+    background-color: #1D232C;
+    color: white;
+    text-align: center;
+    font-size: medium;
 }
 .contactus{
     background-color: #1D232C;
@@ -230,10 +282,6 @@ body::-webkit-scrollbar{
 }
 
 
-
-
-
-
 /* Media Query */
 @media screen and (max-width:700px)  {
     .popup{
@@ -263,5 +311,11 @@ body::-webkit-scrollbar{
     .contactus input[type="text"],.contactus textarea{
         font-size: 3vw;
     }
-   
+    .products-box a button{
+        width: 50px;
+        height: 15%;
+        font-size: medium;
+        margin-left: 2px;
+    }
+    
 }

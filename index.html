@@ -18,12 +18,20 @@
     <title>D&D</title>
 </head>
 <body>
+      <!-- Offer Bar -->
+      <div class="Offerbar">
+        <p>Sign Up and <b>GET 50% OFF </b>for your first Order
+            <i id="offer-close" style="margin-left: 10%;cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+      </div>
+
+
     <!-- NavBar -->
     <nav class="navbar">
         <h1 style="font-size: 3vw;margin-left: 5vw;">D&D</h1>
         <div class="navbar-links">
             <p class="navbar-link"> <a href="index.html">Home</a></p>
-            <p class="navbar-link"> <a href="collection.html">Collections</a></p>
+            <p class="navbar-link"> <a href="index.html#newArrival">Collections</a></p>
             <p class="navbar-link"> <a href="contact.html">Contact</a></p>
             <p class="navbar-link"> <a href="form.html">Login</a></p>
         </div>
@@ -89,28 +97,33 @@
     </div>
  
     <!-- New Arrival -->
-    <div>
+    <div id="newArrival">
         <h2 class="heading" style="padding: 20px;">New Arrival </h2>
         <div class="new-arrival">
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?celebrity1" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <div id="overlay"></div>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?cloths 2" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <div id="overlay"></div>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?3" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <div id="overlay"></div>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?4" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <div id="overlay"></div>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?cloths 1" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <div id="overlay"></div>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
         </div>
     </div>
@@ -120,23 +133,23 @@
         <div class="new-arrival">
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?celebrity2" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?cloths 5" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?6" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?7" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
             <div class="new-arrival-container">
                 <img src="https://source.unsplash.com/random/200x200/?fashion/?cloths 8" alt="">
-                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                <a href="collection.html"><button>Shop Now <i class="fa-solid fa-arrow-right"></i></button></a>
             </div>
         </div>
     </div>
@@ -165,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <p>@ 2024 D&D.com</p>
+        <span id="current_year"></span> &copy; All rights reserved
     </div>
 
     <script src="index.js"></script>

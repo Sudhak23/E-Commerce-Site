@@ -1,3 +1,10 @@
+let offerclose = document.querySelector(".Offerbar");
+
+document.getElementById("offer-close").addEventListener('click',function(){
+    offerclose.style.display="none";
+});
+
+
 var sidenav = document.querySelector(".side-navbar");
 
 function showNavbar(){

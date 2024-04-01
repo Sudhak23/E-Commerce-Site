@@ -13,3 +13,7 @@ search.addEventListener("keyup",function(event){
         }
     }
 })
+
+var likebutton = document.querySelectorAll(".like-button");
+console.log(likebutton)
+
