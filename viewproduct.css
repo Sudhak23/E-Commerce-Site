@@ -362,6 +362,7 @@ main .price-calculator .filters .single-filter .option-filter .selected {
     font-size: 20px;
     line-height: 20px;
     font-weight: bold;
+    margin-top: 10px;
   }
   .product-description p span{
     font-weight: normal;
@@ -386,6 +387,7 @@ main .price-calculator .filters .single-filter .option-filter .selected {
     background-color: #2F9733;
     transition: 0.5s;
   }
+
 
 /* Media Query */
 @media screen and (max-width:700px)  {
@@ -423,9 +425,10 @@ main .price-calculator .filters .single-filter .option-filter .selected {
     .refresh-loader svg{
         width: 25px;
     }
-    /* .global-page-container{
-        width: fit-content;
-    } */
+    .global-page-container{
+        display: flex;
+        flex-direction: column;
+    }
     .results{
         flex-direction: column;
         justify-content: center;

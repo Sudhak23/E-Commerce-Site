@@ -1,8 +1,6 @@
 let offerclose = document.querySelector(".Offerbar");
 
-document.getElementById("offer-close").addEventListener('click',function(){
-    offerclose.style.display="none";
-});
+
 
 
 var sidenav = document.querySelector(".side-navbar");
@@ -15,6 +13,9 @@ function closeNavbar(){
     sidenav.style.left="-60%";
 
 }
+document.getElementById("offer-close").addEventListener('click',function(){
+    offerclose.style.display="none";
+});
 
 
 // Footer

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google fonts links -->
@@ -72,7 +74,7 @@
 
                     <div class="single-filter">
                         <span class="filter-label">Quality</span>
-                        <input type="number" id="quality" value="10">
+                        <input type="number" id="quantity" value="10">
                     </div>
                     <div class="single-filter">
                         <span class="filter-label">Color</span>
@@ -101,19 +103,18 @@
                 <div class="results">
                     <div class="product-picture">
                         <div class="picture-area">
-                            <img id="photo-product" src="img/v-color-personalized.png" alt="short">
+                            <img id="photo-product" src="img/blank.png" alt="short">
                         </div>
                     </div>
                     <div class="product-description">
-                        <h2>Order details</h2>
-                        <p>Product: <span id="result-product">Basic t-shirt</span></p>
-                        <p>Style: <span id="result-style"></span></p>
-                        <p>Quality: <span id="result-quality"></span></p>
-                        <p>Color <span id="result-color"></span></p>
-                        <p>Quantity: <span id="result-quantity"></span></p>
-                        <p>Total: </p>
-
-                        <div id="price">INR<span id="total-price"></span></div>
+                        <h2>Order details  </h2>
+                        <p>Product : <span id="result-product">Basic t-shirt</span></p>
+                        <p>Style : <span id="result-style"></span></p>
+                        <p>Quality : <span id="result-quality"></span></p>
+                        <p>Color : <span id="result-color"></span></p>
+                        <p>Quantity : <span id="result-quantity"></span></p>
+                        <p>Total  </p>
+                        <div id="price">INR  &#x20B9; <span id="total-price"></span></div>
                         <div id="complete-order">Complete order</div>
                     </div>
 
@@ -141,6 +142,7 @@
         <span id="current_year"></span> &copy; All rights reserved
     </div>
     <script src="index.js"></script>
+    <script src="viewproduct.js"></script>
 
 
 </body>
