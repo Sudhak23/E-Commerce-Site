@@ -153,12 +153,7 @@ body::-webkit-scrollbar{
     border-radius: 10px;
     padding: 10px;
 }
-.footer{
-    margin-top: 20px;
-    padding: 40px;
-    background-color: #1D232C;
-    color: white;
-}
+
 .product-section{
    margin-top: 20px;
 }
@@ -227,6 +222,7 @@ body::-webkit-scrollbar{
     color: white;
     text-align: center;
     font-size: medium;
+    z-index: -1;
 }
 .contactus{
     background-color: #1D232C;
@@ -279,6 +275,12 @@ body::-webkit-scrollbar{
     left: 40%;
     opacity: 0;
     transition: 2s;
+}
+.footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color: white;
 }
 
 
