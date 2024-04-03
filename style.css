@@ -154,7 +154,6 @@ body::-webkit-scrollbar{
     padding: 10px;
 }
 .footer{
-    position: sticky;
     margin-top: 20px;
     padding: 40px;
     background-color: #1D232C;
