@@ -81,6 +81,9 @@ $(function(){
     var orderTotal = calculate_total();
      $("#total-price").text( orderTotal );
 
+     var photoid="img/"+ products[search_params.color][search_params.style].photo;
+     $("#photo-product").attr("src",photoid);
+
      window.setTimeout(function(){
         $(".refresh-loader").hide();
      },500)
@@ -119,7 +122,19 @@ $(function(){
   })
 
   $(".option-button").click(function(){
+    var clickedParam = $(this).parent().attr("id");
 
-  })
+    var childSelector = "#" +clickedParam+" .option-button";
+    $(childSelector).removeClass("selected");
+    $(this).addClass("selected");
+   
+
+    var selectedChild = "#" + clickedParam+" .option-button.selected";
+    search_params[clickedParam] = $(selectedChild).attr('id');
+
+
+    update_order_details();
+
+  });
     
 });
